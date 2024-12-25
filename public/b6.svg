@@ -1,0 +1,25 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="400" style="background-color:#1e1e1e;">
+  <rect x="0" y="0" width="100%" height="100%" fill="#1e1e1e"/>
+  <text x="20" y="40" font-family="monospace" font-size="18" fill="#d4d4d4">
+    import torch
+  </text>
+  <text x="20" y="70" font-family="monospace" font-size="18" fill="#d4d4d4">
+    class CV(nn.Module):
+  </text>
+  <text x="40" y="100" font-family="monospace" font-size="18" fill="#4ec9b0">
+    def __init__(self):
+  </text>
+  <text x="60" y="130" font-family="monospace" font-size="18" fill="#dcdcaa">
+    super(CV, self).__init__()
+  </text>
+  <text x="60" y="160" font-family="monospace" font-size="18" fill="#9cdcfe">
+    self.conv1 = nn.Conv2d(in_channels=64, hidden_layers=128, output_channels=10)
+  </text>
+  <text x="40" y="190" font-family="monospace" font-size="18" fill="#4ec9b0">
+    def forward(self, x):
+  </text>
+  <text x="60" y="220" font-family="monospace" font-size="18" fill="#9cdcfe">
+    return self.conv1(x)
+  </text>
+</svg>
