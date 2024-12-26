@@ -3,12 +3,13 @@ import React, { useEffect } from 'react';
 import dynamic from 'next/dynamic';
 
 
-const FloatingNav = dynamic(() => import('@/components/ui/FloatingNav'), { ssr: false });
-const Hero = dynamic(() => import('@/components/Hero'), { ssr: false });
-const Grid = dynamic(() => import('@/components/Grid'), { ssr: false });
-const RecentProjects = dynamic(() => import('@/components/RecentProjects'), { ssr: false });
-const Experience = dynamic(() => import('@/components/Experience'), { ssr: false });
-const Footer = dynamic(() => import('@/components/Footer'), { ssr: false });
+const FloatingNav = dynamic(() => import('@/components/ui/FloatingNav').then((mod) => mod.default), { ssr: false });
+const Hero = dynamic(() => import('@/components/Hero').then((mod) => mod.default), { ssr: false });
+const Grid = dynamic(() => import('@/components/Grid').then((mod) => mod.default), { ssr: false });
+const RecentProjects = dynamic(() => import('@/components/RecentProjects').then((mod) => mod.default), { ssr: false });
+const Experience = dynamic(() => import('@/components/Experience').then((mod) => mod.default), { ssr: false });
+const Footer = dynamic(() => import('@/components/Footer').then((mod) => mod.default), { ssr: false });
+
 
 const Home = () => {
     useEffect(() => {
