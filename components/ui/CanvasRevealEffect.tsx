@@ -6,8 +6,8 @@ import * as THREE from "three";
 import { ThreeJSXElements } from './types';
 
 declare module 'react' {
-  namespace JSX {
-    interface IntrinsicElements extends ThreeJSXElements {}
+  interface JSX {
+     IntrinsicElements:  ThreeJSXElements; 
   }
 }
 
