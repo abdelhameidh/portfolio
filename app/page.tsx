@@ -1,5 +1,5 @@
 "use client";
-
+import {Suspense} from "react";
 import Hero from "../components/Hero";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Grid from "../components/Grid";
@@ -18,6 +18,9 @@ export default function Home() {
         <RecentProjects />
         <Experience />
         <Footer />
+      <Suspense fallback={<>Loading...</>}>
+        <MyComponent />
+        </Suspense>
       </div>
     </main>
   );
