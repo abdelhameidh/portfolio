@@ -5,10 +5,10 @@ import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
 
 declare global {
-  interface JSX {
-     IntrinsicElements {
-      mesh: ThreeElements['mesh']
-      planeGeometry: ThreeElements['planeGeometry']
+  namespace JSX {
+    interface IntrinsicElements {
+      mesh: ThreeElements['mesh'];
+      planeGeometry: ThreeElements['planeGeometry'];
     }
   }
 }
