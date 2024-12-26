@@ -1,21 +1,8 @@
 "use client";
-import { cn } from "@/components/lib/utils";
+import { cn } from "@/lib/utils";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
-
-declare global {
-    namespace JSX {
-      interface IntrinsicElements {
-        mesh: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement> & {
-          position?: [number, number, number];
-          rotation?: [number, number, number];
-          scale?: [number, number, number];
-        };
-        shaderMaterial?: React.DetailedHTMLProps<React.HTMLAttributes<HTMLElement>, HTMLElement>;
-      }
-    }
-  }
 
 export const CanvasRevealEffect = ({
   animationSpeed = 0.4,
