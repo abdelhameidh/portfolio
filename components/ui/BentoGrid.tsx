@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import { cn } from "@/components/lib/utils";
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
