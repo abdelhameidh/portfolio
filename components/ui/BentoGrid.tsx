@@ -1,10 +1,10 @@
 "use client";
+import Image from "next/image";
 import { cn } from "@/components/lib/utils";
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
 import Lottie from "lottie-react";
 import { BackgroundGradientAnimation } from "./GradientBG";
-import { GlobeDemo } from "./GridGlobe";
 import animationData from "@/data/confetti.json"; 
 import MagicButton from "./MagicButton";
 
@@ -188,10 +188,7 @@ export const BentoGridItem = ({
                   }`}
               >
                 {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie animationData={animationData} 
-                  loop={false} 
-                  autoplay={true}
-                  style={{ height: 200, width: 400 }}
+                <Lottie options={defaultOptions} height={200} width={400}}
                    />
               </div>
 
