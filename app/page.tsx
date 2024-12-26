@@ -9,9 +9,21 @@ import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 
 const Home = () => {
-  useEffect(() => {
-    // Any client-side only initialization can go here
-    console.log('Page loaded on client side');
+    useEffect(() => {
+    // Global client-side safety check
+    if (typeof window !== 'undefined') {
+      console.log('Page loaded on client side');
+      
+      // If you suspect a specific function is causing issues
+      const safeCreateTag = () => {
+        if (typeof document !== 'undefined') {
+          // Your tag creation logic here
+          console.log('Creating tag safely');
+        }
+      };
+
+      safeCreateTag();
+    }
   }, []);
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5">
