@@ -5,10 +5,7 @@ import "./globals.css";
 
 
 const inter = Inter({subsets: ["latin"]})
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+
 
 export const metadata: Metadata = {
   title: "Abdelhameid's portfolio",
