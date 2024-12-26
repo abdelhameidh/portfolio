@@ -1,5 +1,7 @@
 "use client";
 import React, { useEffect } from 'react';
+import dynamic from 'next/dynamic';
+
 
 const FloatingNav = dynamic(() => import('@/components/ui/FloatingNav'), { ssr: false });
 const Hero = dynamic(() => import('@/components/Hero'), { ssr: false });
