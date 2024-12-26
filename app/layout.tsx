@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ThemeProvider } from "./provider";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
 
