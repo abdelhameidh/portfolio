@@ -1,12 +1,12 @@
 "use client";
-import Hero from "@/components/Hero";
 import React, { useEffect } from 'react';
-import { FloatingNav } from "@/components/ui/FloatingNav";
-import Grid from "@/components/Grid";
-import RecentProjects from "@/components/RecentProjects";
-import { navItems } from "@/data";
-import Experience from "@/components/Experience";
-import Footer from "@/components/Footer";
+
+const FloatingNav = dynamic(() => import('@/components/ui/FloatingNav'), { ssr: false });
+const Hero = dynamic(() => import('@/components/Hero'), { ssr: false });
+const Grid = dynamic(() => import('@/components/Grid'), { ssr: false });
+const RecentProjects = dynamic(() => import('@/components/RecentProjects'), { ssr: false });
+const Experience = dynamic(() => import('@/components/Experience'), { ssr: false });
+const Footer = dynamic(() => import('@/components/Footer'), { ssr: false });
 
 const Home = () => {
     useEffect(() => {
