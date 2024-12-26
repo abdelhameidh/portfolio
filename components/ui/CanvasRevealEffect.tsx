@@ -7,7 +7,10 @@ import { ThreeJSXElements } from './types';
 
 declare module 'react' {
   interface JSX {
-     IntrinsicElements:  ThreeJSXElements; 
+     IntrinsicElements{
+       mesh: ThreeElements['mesh'];
+       planeGeometry: ThreeElements['planeGeometry'];
+     } 
   }
 }
 
