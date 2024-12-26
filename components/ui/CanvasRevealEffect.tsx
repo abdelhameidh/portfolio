@@ -5,14 +5,7 @@ import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
 import { ThreeJSXElements } from './types';
 
-declare global {
-  namespace JSX {
-    interface IntrinsicElements{
-       mesh: ThreeElements['mesh'];
-       planeGeometry: ThreeElements['planeGeometry'];
-     } 
-  }
-}
+
 
 export const CanvasRevealEffect = ({
   animationSpeed = 0.4,
