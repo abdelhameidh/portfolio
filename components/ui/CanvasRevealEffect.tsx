@@ -3,10 +3,12 @@ import { cn } from "@/components/lib/utils";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
+import { ThreeJSXElements } from './types';
 
-interface IntrinsicElements {
-    mesh: JSX.IntrinsicElements['mesh'];
-    planeGeometry: JSX.IntrinsicElements['planeGeometry'];
+declare module 'react' {
+  namespace JSX {
+    interface IntrinsicElements extends ThreeJSXElements {}
+  }
 }
 
 export const CanvasRevealEffect = ({
