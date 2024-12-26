@@ -5,8 +5,8 @@ import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
 
 declare global {
-  namespace JSX {
-    interface IntrinsicElements {
+  interface JSX {
+     IntrinsicElements {
       mesh: ThreeElements['mesh'];
       planeGeometry: ThreeElements['planeGeometry'];
     }
