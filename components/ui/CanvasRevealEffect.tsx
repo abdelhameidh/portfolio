@@ -5,9 +5,9 @@ import React, { useMemo, useRef } from "react";
 import * as THREE from "three";
 import { ThreeJSXElements } from './types';
 
-declare module 'react' {
-  interface JSX {
-     IntrinsicElements{
+declare global {
+  namespace JSX {
+    interface IntrinsicElements{
        mesh: ThreeElements['mesh'];
        planeGeometry: ThreeElements['planeGeometry'];
      } 
