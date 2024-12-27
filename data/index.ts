@@ -88,10 +88,10 @@ export const navItems = [
     { 
       id: 3,
       title: "Fashion recommender app",
-      des: `Will be available soon. Get outfits recommendations and try them on virtually.`,
+      des: `Get outfits recommendations and try them on virtually.`,
       img: "/fashion.png",
       iconLists: ["/python-icon.svg", "/pytorch.svg", "/opencv.svg",],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      link: "Will be available soon",
     },
     /*
     {
