@@ -88,7 +88,7 @@ export const navItems = [
     { 
       id: 3,
       title: "Fashion recommender app",
-      des: `Get outfits recommendations and try them on virtually.`,
+      des: `Get outfit recommendations and try them on virtually.`,
       img: "/fashion.png",
       iconLists: ["/python-icon.svg", "/pytorch.svg", "/opencv.svg",],
       link: "Will be available soon",
